@@ -5,17 +5,7 @@
     <div class="col-xs-11 col-xs-offset-1 foodList">
       <table style="width:100%">
         <% @foods.each do |f| %>
-          <p class="foodListing">
-            <b><%= f.name %></b> |
-             <b>Calories: </b><%= f.calories %> |
-             <b>Size: </b><%= f.serving_size %> <%= f.server_size_measure %> |
-             <b>Fat: </b><%= f.fat_grams %> Grams |
-             <b>Carbs: </b><%= f.carbs_grams %> Grams |
-             <b>Protien: </b><%= f.protien_grams %> Grams |
-             <b>Cholesterol: </b><%= f.cholesterol_milli %> mg |
-             <b>Weight: </b><%= f.weight_grams %> Grams |
-             <b>Sat. Fat: </b><%= f.sat_fat_grams %> Grams
-          </p>
+        <%= link_to f.name, food_path( f ) %> <br \>
         <%end%>
       </table>
     </div>

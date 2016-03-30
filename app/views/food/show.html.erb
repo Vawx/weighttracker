@@ -1,0 +1,18 @@
+
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <h1><%= @food.name %></h1>
+    <div class="well">
+      <table style="width:100%;"
+      <tr><td><h5>Calories:</td><td> <%= @food.calories %></h5></td></tr>
+      <tr><td><h5>Size:</td><td> <%= @food.serving_size %> <%= @food.server_size_measure %></h5></td></tr>
+      <tr><td><h5>Fat:</td><td>  <%= @food.fat_grams %> Grams</h5></td></tr>
+      <tr><td><h5>Carbs:</td><td> <%= @food.carbs_grams %> Grams</h5></td></tr>
+      <tr><td><h5>Protien:</td><td> <%= @food.protien_grams %> Grams</h5></td></tr>
+      <tr><td><h5>Cholesterol:</td><td> <%= @food.cholesterol_milli %> mg</h5></td></tr>
+      <tr><td><h5>Weight:</td><td> <%= @food.weight_grams %> Grams</h5></td></tr>
+      <tr><td><h5>Sat. Fat:</td><td> <%= @food.sat_fat_grams %> Grams </h5></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
