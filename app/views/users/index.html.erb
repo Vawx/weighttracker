@@ -2,12 +2,35 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <div class="col-xs-11 col-xs-offset-1 foodList">
+    <div class="col-xs-5 col-xs-offset-1 foodList">
       <table style="width:100%">
         <% @foods.each do |f| %>
         <%= link_to f.name, food_path( f ) %> <br \>
         <%end%>
       </table>
     </div>
+    <div class="col-xs-5">
+      <h3 style="text-align:center;">Calorie Calculator</h3>
+      <div class="well">
+        <label for="" class='label-default'>Excersize</label> <br \>
+        <select class="" name="">
+          <option>Cycling</option>
+          <option>Weigth Lifting</option>
+          <option>Stair Machine</option>
+          <option>Rowing Machine</option>
+          <option>Ski Machine</option>
+          <option>Running</option>
+          <option>Sprinting</option>
+          <option>Archery</option>
+          <option>Basketball</option>
+          <option>Billiards</option>
+          <option>Bowling</option>
+          <option>Boxing</option>
+          <option>Golf</option>
+        </select>
+      </div>
+    </div>
   </div>
 </div>
+
+Yoga

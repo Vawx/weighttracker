@@ -20,7 +20,6 @@ t.float    "sat_fat_grams"
 =end
 
 foods_list = [
-  ["1000 ISLAND",1,"TBSP",2,25,2,0,2,15,0.2],
   ["1000 ISLAND",                   1, "TBSP",         6,        60    ,       2  ,       0    ,    4 ,      16    ,    1],
   ["100% NATURAL CEREAL",           1, "OZ",          6,      135        ,  18     ,    3      ,  0    ,  28.35   ,  4.1],
   ["40% BRAN FLAKES, KELLOGG'S",    1, "OZ",           1,        90     ,     22    ,     4    ,    0   ,   28.35  ,   0.1],
