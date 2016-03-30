@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One)
+
+$link_color: #FF9900
+$idle_link_color: #FF0000
+$jumbo_color: rgb(200,200,200)
+$background_color: white
+$font_color: black
+
+body
+  font-family: 'Rubik Mono One', sans-serif
+  background-color: $background_color
+  color: $font_color
+
+a
+  color: $idle_link_color
+
+a:hover
+  color: $link_color
+
+.jumbotron
+  background-color: $jumbo_color
+  border-radius: 12px
+
+.jumboText
+  color: black
+
+.jumboText:hover
+  text-decoration: none
+  color: black
