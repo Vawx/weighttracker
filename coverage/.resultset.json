@@ -1,0 +1,47 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Guest/Desktop/weighttracker/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/weighttracker/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/weighttracker/app/models/food.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/weighttracker/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/weighttracker/app/controllers/users_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1459359861
+  }
+}
