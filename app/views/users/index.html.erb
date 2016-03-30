@@ -2,34 +2,32 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <div class="col-xs-5 col-xs-offset-1 foodList">
-      <table style="width:100%">
-        <% @foods.each do |f| %>
+    <div class="col-xs-4 col-xs-offset-1 foodList border-div" >
+      <% @foods.each do |f| %>
         <%= link_to f.name, food_path( f ) %> <br \>
-        <%end%>
-      </table>
+      <%end%>
     </div>
-    <div class="col-xs-5">
+    <div class="col-xs-5 col-xs-offset-1 border-div">
       <h3 style="text-align:center;">Calorie Calculator</h3>
       <div class="col-xs-6">
         <div class="excersize">
           <label for="" class=''>Excersize</label> <br \>
-          <select class="" name="">
-            <option>Cycling</option>
-            <option>Weigth Lifting</option>
-            <option>Stair Machine</option>
-            <option>Rowing Machine</option>
-            <option>Ski Machine</option>
-            <option>Running</option>
-            <option>Sprinting</option>
-            <option>Archery</option>
-            <option>Basketball</option>
-            <option>Billiards</option>
-            <option>Bowling</option>
-            <option>Boxing</option>
-            <option>Golf</option>
+          <select class="excersize" name="excersize">
+            <option value="cycling">Cycling</option>
+            <option value="lifting">Weigth Lifting</option>
+            <option value="stairs">Stair Machine</option>
+            <option value="rowing">Rowing Machine</option>
+            <option value="ski">Ski Machine</option>
+            <option value="running">Running</option>
+            <option value="sprinting">Sprinting</option>
+            <option value="archer">Archery</option>
+            <option value="basketball">Basketball</option>
+            <option value="billiards">Billiards</option>
+            <option value="bowling">Bowling</option>
+            <option value="boxing">Boxing</option>
+            <option value="golf">Golf</option>
           </select>
-          
+
         </div>
       </div>
       <div class="col-xs-6">
