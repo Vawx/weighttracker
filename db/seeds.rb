@@ -19,6 +19,22 @@ t.float    "weight_grams"
 t.float    "sat_fat_grams"
 =end
 
+excersize_list = [
+  ['Cycling', 695],
+  ['Weigth Lifting', 490],
+  ['Stair Machine', 735],
+  ['Rowing Machine', 572],
+  ['Ski Machine', 572],
+  ['Running', 899],
+  ['Sprinting', 1308],
+  ['Archery', 286],
+  ['Basketball', 490],
+  ['Billiards', 204],
+  ['Bowling', 245],
+  ['Boxing', 981],
+  ['Golf', 368],
+]
+
 foods_list = [
   ["1000 ISLAND",                   1, "TBSP",         6,        60    ,       2  ,       0    ,    4 ,      16    ,    1],
   ["100% NATURAL CEREAL",           1, "OZ",          6,      135        ,  18     ,    3      ,  0    ,  28.35   ,  4.1],
@@ -69,6 +85,10 @@ foods_list = [
   ['BEEF POTPIE, HOME RECIPE'       ,1, 'PIECE'  ,     30   ,    515     ,     39   ,     21  ,     42   ,    210   ,   7.9],
   ['BEEF ROAST, EYE O RND, LEAN'    ,3, 'OZ'     ,      5   ,    135     ,      0   ,     22  ,     52   ,    75    ,   1.9],
 ]
+
+excersize_list.each do |name, calories_per_hour|
+  Excersize.create( name: name, calories_per_hour: calories_per_hour )
+end
 
 foods_list.each do |name, serving_size, server_size_measure, fat_grams, calories, carbs_grams, protien_grams, cholesterol_milli, weight_grams, sat_fat_grams|
   Food.create( name: name, calories: calories, serving_size: serving_size, server_size_measure: server_size_measure, fat_grams: fat_grams, carbs_grams: carbs_grams, protien_grams: protien_grams, cholesterol_milli: cholesterol_milli, weight_grams: weight_grams, sat_fat_grams: sat_fat_grams );
